@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionary", "Pars
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionary.Business", "ParseDataDictionary.Business\ParseDataDictionary.Business.csproj", "{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionary.Business.Tests", "ParseDataDictionary.Business.Tests\ParseDataDictionary.Business.Tests.csproj", "{4339A868-6935-403C-AA81-322E562A25B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4339A868-6935-403C-AA81-322E562A25B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4339A868-6935-403C-AA81-322E562A25B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4339A868-6935-403C-AA81-322E562A25B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4339A868-6935-403C-AA81-322E562A25B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
