@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionaryForExtendedProperties", "ParseDataDictionaryForExtendedProperties\ParseDataDictionaryForExtendedProperties.csproj", "{CEA527DF-378A-4D8E-999D-E9403CCB9F62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionary", "ParseDataDictionary\ParseDataDictionary.csproj", "{CEA527DF-378A-4D8E-999D-E9403CCB9F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionaryForExtendedProperties.Business", "ParseDataDictionaryForExtendedProperties.Business\ParseDataDictionaryForExtendedProperties.Business.csproj", "{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseDataDictionary.Business", "ParseDataDictionary.Business\ParseDataDictionary.Business.csproj", "{EAE6118F-CD93-46A2-A9B6-E14D4F71627D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

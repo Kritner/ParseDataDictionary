@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
-using ParseDataDictionaryForExtendedProperties.Business.Interfaces;
-using ParseDataDictionaryForExtendedProperties.Business.Models;
+using ParseDataDictionary.Business.Interfaces;
+using ParseDataDictionary.Business.Models;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Services
+namespace ParseDataDictionary.Business.Services
 {
     /// <summary>
     /// Used to parse an excel file

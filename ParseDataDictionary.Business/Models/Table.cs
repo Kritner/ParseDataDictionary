@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Models
+namespace ParseDataDictionary.Business.Models
 {
     /// <summary>
     /// Represents a table

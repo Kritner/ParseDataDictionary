@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ParseDataDictionaryForExtendedProperties.Business.Interfaces;
+using ParseDataDictionary.Business.Interfaces;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Services
+namespace ParseDataDictionary.Business.Services
 {
 
     /// <summary>

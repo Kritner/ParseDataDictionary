@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Services
+namespace ParseDataDictionary.Business.Services
 {
 
     /// <summary>

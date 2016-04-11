@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Interfaces
+namespace ParseDataDictionary.Business.Interfaces
 {
     public interface IFileExists
     {

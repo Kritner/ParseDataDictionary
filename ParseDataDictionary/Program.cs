@@ -4,10 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ClosedXML.Excel;
-using ParseDataDictionaryForExtendedProperties.Business.Services;
+using ParseDataDictionary.Business.Services;
 
-namespace ParseDataDictionaryForExtendedProperties
+namespace ParseDataDictionary
 {
     class Program
     {

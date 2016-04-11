@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Models
+namespace ParseDataDictionary.Business.Models
 {
 
     /// <summary>

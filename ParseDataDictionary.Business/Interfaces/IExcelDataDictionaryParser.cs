@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
-using ParseDataDictionaryForExtendedProperties.Business.Models;
+using ParseDataDictionary.Business.Models;
 
-namespace ParseDataDictionaryForExtendedProperties.Business.Interfaces
+namespace ParseDataDictionary.Business.Interfaces
 {
     /// <summary>
     /// Interface for parsing the IExcelDataDictionary
