@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ParseDataDictionary.Business.Interfaces;
 using ParseDataDictionary.Business.Models;
 
 namespace ParseDataDictionary.Business.Services
@@ -11,7 +12,7 @@ namespace ParseDataDictionary.Business.Services
     /// <summary>
     /// Generate the SQL scripts used to create the extended properties based on an IEnumerable of Table
     /// </summary>
-    public class GenerateSqlScriptsForExtendedPropertiesService
+    public class GenerateSqlScriptsForExtendedPropertiesService : IGenerateSqlScriptsForExtendedProperties
     {
         #region const
         const string _GENERATING_COMMENT_FOR_TABLE = @"--Generating scripts for {0}";

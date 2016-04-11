@@ -13,7 +13,7 @@ namespace ParseDataDictionary.Business.Services
     /// <summary>
     /// Load an excel file
     /// </summary>
-    public class LoadExcelFileService
+    public class LoadExcelFileService : ILoadExcelFile
     {
 
         private readonly IFileExists _iFileExists;

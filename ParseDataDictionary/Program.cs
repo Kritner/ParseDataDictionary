@@ -15,8 +15,17 @@ namespace ParseDataDictionary
             Console.WriteLine("Enter path and filename to data dictionary and press <ENTER>");
             string dataDictionaryFileNameAndPath = Console.ReadLine();
 
-            LoadParseExportDataDictionaryService service = new LoadParseExportDataDictionaryService();
-            var results = service.Execute(dataDictionaryFileNameAndPath);
+            // TODO - Consider an IOC container for getting references, this is getting complex
+            LoadParseExportDataDictionaryService service = new LoadParseExportDataDictionaryService(
+                new LoadExcelFileService(
+                    new FileExistsService(),
+                    dataDictionaryFileNameAndPath
+                ),
+                new ExcelDataDictionaryParserService(),
+                new GenerateSqlScriptsForExtendedPropertiesService(),
+                new SQLScriptFileWriterService()
+            );
+            var results = service.Execute();
 
             Console.WriteLine("");
         }
