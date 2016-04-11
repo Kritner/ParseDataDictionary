@@ -57,6 +57,7 @@
     <Compile Include="Services\FileExistsService.cs" />
     <Compile Include="Services\GenerateSqlScriptsForExtendedPropertiesService.cs" />
     <Compile Include="Services\LoadExcelFileService.cs" />
+    <Compile Include="Services\LoadParseExportDataDictionaryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

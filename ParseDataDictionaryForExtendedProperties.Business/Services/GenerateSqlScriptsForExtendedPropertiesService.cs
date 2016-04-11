@@ -15,8 +15,8 @@ namespace ParseDataDictionaryForExtendedProperties.Business.Services
     {
         #region const
         string _GENERATING_COMMENT_FOR_TABLE = @"--Generating scripts for {0}";
-        string _SCRIPT_TEMPLATE_FOR_TABLE = @"
-            IF NOT EXISTS (
+        string _SCRIPT_TEMPLATE_FOR_TABLE = 
+            @"IF NOT EXISTS (
                 SELECT NULL 
                 FROM SYS.EXTENDED_PROPERTIES 
                 WHERE [major_id] = OBJECT_ID('{0}') 
@@ -39,8 +39,8 @@ namespace ParseDataDictionaryForExtendedProperties.Business.Services
                     @level1type = N'TABLE', 
                     @level1name = N'{0}';
         ";
-        string _SCRIPT_TEMPLATE_FOR_TABLE_COLUMN = @"
-            IF NOT EXISTS (
+        string _SCRIPT_TEMPLATE_FOR_TABLE_COLUMN = 
+            @"IF NOT EXISTS (
                 SELECT NULL 
                 FROM SYS.EXTENDED_PROPERTIES 
                 WHERE [major_id] = OBJECT_ID('{0}') 
