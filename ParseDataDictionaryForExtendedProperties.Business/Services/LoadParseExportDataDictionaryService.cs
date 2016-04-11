@@ -15,6 +15,11 @@ namespace ParseDataDictionaryForExtendedProperties.Business.Services
     public class LoadParseExportDataDictionaryService
     {
 
+        /// <summary>
+        /// Loads, parses, and generates SQL scripts
+        /// </summary>
+        /// <param name="fileNameAndPath">The list of sql scripts to execute</param>
+        /// <returns></returns>
         public List<string> Execute(string fileNameAndPath)
         {
             // Load the document

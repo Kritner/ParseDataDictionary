@@ -111,6 +111,11 @@ namespace ParseDataDictionaryForExtendedProperties.Business.Services
             return new Table(tableName, tableDescription, tableColumns);
         }
 
+        /// <summary>
+        /// Generate TableColumn's from sheet
+        /// </summary>
+        /// <param name="sheet">The sheet to parse</param>
+        /// <returns>List of TableColumn</returns>
         private List<TableColumn> CreateTableColumnsFromSheet(IXLWorksheet sheet)
         {
             List<TableColumn> list = new List<TableColumn>();
