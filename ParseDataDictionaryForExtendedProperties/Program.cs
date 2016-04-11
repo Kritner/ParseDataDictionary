@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,11 +25,20 @@ namespace ParseDataDictionaryForExtendedProperties
             XLWorkbook excelFile = excelService.Execute();
 
             // Parse the document
-            ExcelDataDictionaryParserService parserService = new ExcelDataDictionaryParserService();
+            ExcelDataDictionaryParserService parserService = 
+                new ExcelDataDictionaryParserService();
             var tables = parserService.ParseDocumentIntoModel(excelFile);
 
             // Generate the SQL scripts to insert the table, table description, columns, and column description.
+            GenerateSqlScriptsForExtendedPropertiesService sqlScriptService = 
+                new GenerateSqlScriptsForExtendedPropertiesService();
+            var sqlScripts = sqlScriptService.GetSqlScripts(tables);
 
+            // Write the sqlScripts to a file
+            TextWriter tw = new StreamWriter("SqlScript.txt");
+            foreach (string s in sqlScripts)
+                tw.WriteLine(s);
+            tw.Close();
 
             Console.WriteLine("");
         }

@@ -92,9 +92,7 @@ namespace ParseDataDictionaryForExtendedProperties.Business.Services
             List<Table> list = new List<Table>();
 
             foreach(IXLWorksheet sheet in workbook.Worksheets)
-            {
                 list.Add(CreateTableFromSheet(sheet));
-            }
 
             return list;
         }
