@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
-using ParseDataDictionaryForExtendedProperties.Interfaces;
+using ParseDataDictionaryForExtendedProperties.Business.Interfaces;
 
-namespace ParseDataDictionaryForExtendedProperties.Services
+namespace ParseDataDictionaryForExtendedProperties.Business.Services
 {
 
     /// <summary>
@@ -42,9 +42,7 @@ namespace ParseDataDictionaryForExtendedProperties.Services
         /// </summary>
         public XLWorkbook Execute()
         {
-            XLWorkbook wb = new XLWorkbook(_fileNameAndPath);
-
-            return wb;
+            return new XLWorkbook(_fileNameAndPath);
         }
 
     }

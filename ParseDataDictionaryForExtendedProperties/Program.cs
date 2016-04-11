@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ParseDataDictionaryForExtendedProperties.Services;
+using ClosedXML.Excel;
+using ParseDataDictionaryForExtendedProperties.Business.Services;
 
 namespace ParseDataDictionaryForExtendedProperties
 {
@@ -14,13 +15,14 @@ namespace ParseDataDictionaryForExtendedProperties
             Console.WriteLine("Enter path and filename to data dictionary and press <ENTER>");
             string dataDictionaryFileNameAndPath = Console.ReadLine();
 
-            LoadExcelFileService service = 
+            LoadExcelFileService excelService = 
                 new LoadExcelFileService(
                     new FileExistsService(), 
                     dataDictionaryFileNameAndPath
                 );
 
-            var results = service.Execute();
+            XLWorkbook excelFile = excelService.Execute();
+
             Console.WriteLine("");
         }
     }

@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ParseDataDictionaryForExtendedProperties.Interfaces;
+using ParseDataDictionaryForExtendedProperties.Business.Interfaces;
 
-namespace ParseDataDictionaryForExtendedProperties.Services
+namespace ParseDataDictionaryForExtendedProperties.Business.Services
 {
     public class FileExistsService : IFileExists
     {
