@@ -43,7 +43,7 @@ namespace ParseDataDictionary.Business.Models
             if (string.IsNullOrEmpty(tableDescription))
                 throw new ArgumentNullException(nameof(tableDescription));
             if (tableColumns.Count() == 0)
-                throw new ArgumentException(nameof(TableColumn));
+                throw new ArgumentException(nameof(tableColumns));
 
             TableName = tableName;
             TableDescription = tableDescription;

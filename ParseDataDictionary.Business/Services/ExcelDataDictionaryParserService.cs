@@ -121,7 +121,7 @@ namespace ParseDataDictionary.Business.Services
             List<TableColumn> list = new List<TableColumn>();
 
             // For every row (starting at TableColumnsStartRow) until the last row used in the sheet
-            for (int rowIterator = TableColumnsStartRow; rowIterator < sheet.LastRowUsed().RowNumber(); rowIterator++)
+            for (int rowIterator = TableColumnsStartRow; rowIterator < sheet.LastRowUsed().RowNumber()+1; rowIterator++)
             {
                 IXLRow row = sheet.Row(rowIterator);
                 string columnName = row.Cell(TableColumnNameColumnPosition).Value.ToString();

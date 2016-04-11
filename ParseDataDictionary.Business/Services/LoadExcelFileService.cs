@@ -27,14 +27,11 @@ namespace ParseDataDictionary.Business.Services
         {
             if (iFileExists == null)
                 throw new ArgumentNullException(nameof(iFileExists));
+            if (string.IsNullOrEmpty(fileNameAndPath))
+                throw new ArgumentNullException(nameof(fileNameAndPath));
 
             _iFileExists = iFileExists;
             _fileNameAndPath = fileNameAndPath;
-
-            if (!_iFileExists.CheckFileExists(fileNameAndPath))
-            {
-                throw new FileNotFoundException(nameof(fileNameAndPath));
-            }
         }
 
         /// <summary>
@@ -42,6 +39,9 @@ namespace ParseDataDictionary.Business.Services
         /// </summary>
         public XLWorkbook Execute()
         {
+            if (!_iFileExists.CheckFileExists(_fileNameAndPath))
+                throw new FileNotFoundException(nameof(_fileNameAndPath));
+
             return new XLWorkbook(_fileNameAndPath);
         }
 
