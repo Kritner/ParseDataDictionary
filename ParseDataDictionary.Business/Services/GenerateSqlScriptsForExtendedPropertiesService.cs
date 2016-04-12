@@ -15,7 +15,31 @@ namespace ParseDataDictionary.Business.Services
     public class GenerateSqlScriptsForExtendedPropertiesService : IGenerateSqlScriptsForExtendedProperties
     {
         #region const
+        /// <summary>
+        /// Generate a comment for a table (section) start
+        /// </summary>
+        /// <remarks>
+        /// {0} is the table name
+        /// </remarks>
+        /// <example>
+        /// <code>
+        ///     string.Format(_GENERATING_COMMENT_FOR_TABLE, "MyTable");
+        /// </code>
+        /// </example>
         public const string _GENERATING_COMMENT_FOR_TABLE = @"--Generating scripts for {0}";
+        
+        /// <summary>
+        /// Create (or update) an extended property for a table
+        /// </summary>
+        /// <remarks>
+        /// {0} is table name
+        /// {1} is table description
+        /// </remarks>
+        /// <example>
+        /// <code>
+        ///     string.Format(_SCRIPT_TEMPLATE_FOR_TABLE, "MyTable", "My Table Description");
+        /// </code>
+        /// </example>
         public const string _SCRIPT_TEMPLATE_FOR_TABLE = 
             @"IF NOT EXISTS (
                 SELECT NULL 
@@ -40,6 +64,20 @@ namespace ParseDataDictionary.Business.Services
                     @level1type = N'TABLE', 
                     @level1name = N'{0}';
         ";
+
+        /// <summary>
+        /// Create (or update) an extended property for a table's column
+        /// </summary>
+        /// <remarks>
+        /// {0} is table name
+        /// {1} is column name
+        /// {2} is column description
+        /// </remarks>
+        /// <example>
+        /// <code>
+        ///     string.Format(_SCRIPT_TEMPLATE_FOR_TABLE_COLUMN, "MyTable", "MyColumn", "My Column Description");
+        /// </code>
+        /// </example>
         public const string _SCRIPT_TEMPLATE_FOR_TABLE_COLUMN = 
             @"IF NOT EXISTS (
                 SELECT NULL 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ParseDataDictionary.Business.Models;
 
@@ -10,6 +11,7 @@ namespace ParseDataDictionary.Business.Tests.Models
     /// Tests for Table
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class TableTests
     {
         #region const

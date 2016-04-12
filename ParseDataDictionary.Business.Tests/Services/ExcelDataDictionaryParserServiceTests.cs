@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using ClosedXML.Excel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -14,6 +15,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests rely on specific data within testDataDictionary.xlsx
     /// </remarks>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class ExcelDataDictionaryParserServiceTests
     {
 

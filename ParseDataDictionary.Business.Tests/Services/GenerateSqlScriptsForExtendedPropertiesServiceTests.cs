@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ParseDataDictionary.Business.Services;
 using System.Collections.Generic;
 using ParseDataDictionary.Business.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ParseDataDictionary.Business.Tests.Services
 {
@@ -11,6 +12,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests for GenerateSqlScriptsForExtendedPropertiesService
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class GenerateSqlScriptsForExtendedPropertiesServiceTests
     {
         #region const

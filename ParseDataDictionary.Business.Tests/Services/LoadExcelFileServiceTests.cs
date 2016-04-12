@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using ClosedXML.Excel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -13,6 +14,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests for LoadExcelFileService
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class LoadExcelFileServiceTests
     {
         #region Private

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -12,6 +13,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests for SQLScriptFileWriterService
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class SQLScriptFileWriterServiceTests
     {
         #region const

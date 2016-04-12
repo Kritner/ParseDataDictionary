@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ParseDataDictionary.Business.Models;
 
@@ -9,6 +10,7 @@ namespace ParseDataDictionary.Business.Tests.Models
     /// Tests for TableColumn
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class TableColumnTests
     {
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using ClosedXML.Excel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -14,6 +15,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests for LoadParseExportDataDictionaryService
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class LoadParseExportDataDictionaryServiceTests
     {
 

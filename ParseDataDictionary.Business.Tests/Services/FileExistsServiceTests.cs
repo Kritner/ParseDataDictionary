@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ParseDataDictionary.Business.Services;
 
@@ -9,6 +10,7 @@ namespace ParseDataDictionary.Business.Tests.Services
     /// Tests for FileExistsService
     /// </summary>
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class FileExistsServiceTests
     {
         #region Private
@@ -29,6 +31,17 @@ namespace ParseDataDictionary.Business.Tests.Services
         #endregion Setup
 
         #region Public methods/tests
+        /// <summary>
+        /// ArgumentNullException thrown when filename not provided
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void FileExistsService_CheckFileExists_ThrowsArgumentNullExceptionWhenFileNameNotProvided()
+        {
+            // Arrange / Act
+            var results = _biz.CheckFileExists(null);
+        }
+        
         /// <summary>
         /// CheckFileExists returns true when the file exists
         /// </summary>

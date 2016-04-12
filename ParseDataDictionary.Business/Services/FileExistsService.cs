@@ -23,7 +23,7 @@ namespace ParseDataDictionary.Business.Services
         public bool CheckFileExists(string fullFileNameAndPath)
         {
             if (string.IsNullOrEmpty(fullFileNameAndPath))
-                throw new ArgumentException(nameof(fullFileNameAndPath));
+                throw new ArgumentNullException(nameof(fullFileNameAndPath));
 
             return File.Exists(fullFileNameAndPath);
         }
