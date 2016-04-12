@@ -72,6 +72,8 @@
     <Compile Include="Services\FileExistsServiceTests.cs" />
     <Compile Include="Services\ExcelDataDictionaryParserServiceTests.cs" />
     <Compile Include="Services\GenerateSqlScriptsForExtendedPropertiesServiceTests.cs" />
+    <Compile Include="Services\LoadParseExportDataDictionaryServiceTests.cs" />
+    <Compile Include="Services\SQLScriptFileWriterServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
